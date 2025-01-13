@@ -50,13 +50,13 @@ A custom Python solution was developed for greater flexibility and precision. Ke
 
 This project was developed by:
 
-- [@Martin-Martuccio](https://github.com/Martin-Martuccio) - Martin Martuccio
+- Martin Martuccio: [@Martin-Martuccio](https://github.com/Martin-Martuccio) 
   
-- [@PSamK](https://github.com/PSamK) - Samuele Pellegrini
+- Samuele Pellegrini: [@PSamK](https://github.com/PSamK)
   
-- [@biaperass](https://github.com/biaperass) - Bianca Perasso
+- Bianca Perasso: [@biaperass](https://github.com/biaperass)
   
-- [@LorenzoMesi](https://github.com/LorenzoMesi) - Lorenzo Mesi
+- : Lorenzo Mesi: [@LorenzoMesi](https://github.com/LorenzoMesi) 
   
 ## Contact
 
