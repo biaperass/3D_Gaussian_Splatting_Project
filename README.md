@@ -62,13 +62,13 @@ This project was developed by:
 
 For questions, issues, or collaborations, please contact:
 
-- Martin Martuccio: [martinmartuccio@gmail.com](Martin:martinmartuccio@gmail.com)
+- Martin Martuccio: martinmartuccio@gmail.com
 
-- Samuele Pellegrini: [pellegrini.samuele.1@gmail.com](Samuele:pellegrini.samuele.1@gmail.com)
+- Samuele Pellegrini: pellegrini.samuele.1@gmail.com
 
-- Bianca Perasso: [bianca.perasso@gmail.com](Bianca:bianca.perasso@gmail.com)
+- Bianca Perasso: bianca.perasso@gmail.com
 
-- Lorenzo Mesi: [mesilorenzo@gmail.com](Lorenzo:mesilorenzo@gmail.com)
+- Lorenzo Mesi: mesilorenzo@gmail.com
 
 ## Acknoledgements
 
