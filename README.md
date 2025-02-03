@@ -52,6 +52,7 @@ A custom viewer was developed for visualizing 3D models with a user-friendly int
 Modifications made to the original viewer primarly include a **Models Manager** folder in order to handle more 3d models.
 
 ![Viewer](docs/images/viewer/gui.png)
+
 *Custom GUI*
 
 # Collaborators
