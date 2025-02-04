@@ -16,19 +16,31 @@ CloudCompare was used to align and merge two PLY models: one intact and one simu
 
 After alignment, the models were merged into a single exportable file.
 
-![Initial Configuration](docs/images/cloudcompare/statues_for_icp.jpg)  
+<p align="center">
+  <img src="docs/images/cloudcompare/statues_for_icp.jpg" alt="Initial Configuration" width="600">
+</p>
+
 *Initial configuration of models.*
 
-![Merged Models](docs/images/cloudcompare/alignment_differences.jpg)  
+<p align="center">
+  <img src="docs/images/cloudcompare/alignment_differences.jpg" alt="Merged Models" width="350">
+</p>
+
 *Merged models with highlighted differences.*
 
 ### MeshLab
 MeshLab, developed by ISTI-CNR, was also tested but proved less effective. Its ICP implementation requires manual point pairing, leading to higher error rates and reduced reliability.
 
-![Point Pairs Picking](docs/images/meshlab/satiroebaccante_icp_meshlab.png)  
+<p align="center">
+  <img src="docs/images/meshlab/satiroebaccante_icp_meshlab.png" alt="Point Pairs Picking" width="650">
+</p> 
+
 *Manual point pairing in MeshLab.*
 
-![Aligned Models](docs/images/meshlab/satiroebaccante_merging_meshalb.png)  
+<p align="center">
+  <img src="docs/images/meshlab/satiroebaccante_merging_meshalb.png" alt="Aligned Models" width="450">
+</p> 
+
 *Models after ICP alignment in MeshLab.*
 
 ### Custom Solution
@@ -38,22 +50,61 @@ A custom Python solution was developed for greater flexibility and precision. Ke
 3. **Difference Visualization**: Highlighting changes (erosion or new material) using a KDTree structure.
 4. **PLY Reconstruction**: Exporting the merged model for interactive visualization.
 
-![Before ICP](docs/images/coding/Code_ICP_Before.png)  
+<p align="center">
+  <img src="docs/images/coding/Code_ICP_Before.png" alt="Before ICP" width="550">
+</p> 
+
 *Models before ICP alignment.*
 
-![After ICP](docs/images/coding/Code_ICP_After.png)  
+<p align="center">
+  <img src="docs/images/coding/Code_ICP_After.png" alt="After ICP" width="350">
+</p> 
+
 *Models after ICP alignment.*
 
-![Differences](docs/images/coding/Code_Broken3.png)  
+<p align="center">
+  <img src="docs/images/coding/Code_Broken3.png" alt="Differences" width="350">
+</p>  
+
 *Highlighted differences between models.*
 
 ### Custom Viewer
-A custom viewer was developed for visualizing 3D models with a user-friendly interface. 
-Modifications made to the original viewer primarly include a **Models Manager** folder in order to handle more 3d models.
+This is a custom version of the viewer [Original-Gaussian-Splatting-WebGL](https://github.com/kishimisu/Gaussian-Splatting-WebGL), enhanced with additional features for improved usability:
 
-![Viewer](docs/images/viewer/gui.png)
+- **Models Manager**: A new section in the GUI for handling multiple Gaussian Splatting models.
+- **Upload PLY Files**: Upload and visualize `.ply` files directly.
+- **Model Selection**: Use checkboxes to toggle between uploaded models.
+- **Multi-Model Support**: Dynamically add and switch between multiple models.
+- **Model Removal**: Clear all models by reloading the page.
 
-*Custom GUI*
+Explore the full custom viewer repository with detailed documentation here: [Custom-Gaussian-Splatting](https://github.com/biaperass/Gaussian-Splatting-WebGL).  
+
+👉Try the live demo here: [Click here to try the live demo!](https://biaperass.github.io/Gaussian-Splatting-WebGL/)
+
+<p align="center">
+  <img src="docs/images/viewer/gui.png" alt="Viewer" width="250">
+</p> 
+
+### Custom GUI for model merging process
+The custom GUI provides an intuitive interface for interacting with the model merging process, making it accessible even for users with limited technical expertise. It includes the following features:
+
+- **Model Upload**: Two buttons for loading PLY models (Model 1 and Model 2) to be merged.
+- **Parameter Configuration**: A set of adjustable parameters with tooltips (hover over the question mark icons for explanations):
+  - **Difference Colors**: Define colors for differences between Model 1 and Model 2, and vice versa.
+  - **Alignment Threshold**: Set the tolerance level for model alignment and difference identification.
+  - **Alpha Values**: Control the transparency of the models during visualization.
+  - **Merging Modes**: Choose between two merging modes for the final output.
+- **Process Control**: Start the merging process with a dedicated button.
+- **Output Options**: 
+  - Open the custom viewer to visualize the merged model.
+  - Access the output folder containing the final PLY file.
+
+This GUI streamlines the merging process while offering flexibility for advanced users to fine-tune parameters.
+
+<p align="center">
+  <img src="docs/images/GUI_MMP/gui.png" alt="Viewer" width="250">
+</p>
+
 
 # Collaborators
 
